@@ -20,8 +20,7 @@ class _FirstPageState extends State<FirstPage> {
     // double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SafeArea(
-        child: Responsive(
-          mobile: Column(
+        child:  Column(
             children: [
               buildCard(),
               buildStoreName(),
@@ -33,19 +32,8 @@ class _FirstPageState extends State<FirstPage> {
               buildSignupButton(context),
             ],
           ),
-          tab: Column(
-            children: [
-              buildCard(),
-              buildStoreName(),
-              buildIntroSloganText(),
-              buildSigninButton(context),
-              const SizedBox(
-                height: 16,
-              ),
-              buildSignupButton(context),
-            ],
-          ),
-        ),
+         
+        
       ),
     );
   }

@@ -12,13 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Book Store',
-      theme: ThemeData(
-       fontFamily: 'Kanit',
-        primarySwatch: Colors.brown,
-      ),
-      home: const FirstPage()
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Book Store',
+        theme: ThemeData(
+          fontFamily: 'Kanit',
+          primarySwatch: Colors.brown,
+        ),
+        home: const FirstPage());
   }
 }
